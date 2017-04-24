@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jain.avinash.project.MainActivity">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:text="Server app"
+        android:id="@+id/textView" />
+
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:text="enter text:"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/txtInputFromClient"
+        android:layout_alignBottom="@+id/txtInputFromClient"
+        android:layout_toEndOf="@+id/txtContentToSend" />
+
+    <EditText android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:id="@+id/txtContentToSend"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:text="Send"
+        android:id="@+id/btnSendToClient"
+        android:onClick="someButtonClicked"
+        android:layout_below="@+id/txtInputFromClient"
+        android:layout_alignEnd="@+id/txtInputFromClient"
+        android:layout_toEndOf="@+id/txtContentToSend" />
+
+
+
+    <EditText
+        android:layout_height="30dp"
+        android:layout_width="232dp"
+        android:id="@+id/txtInputFromClient"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/txtContentToSend"
+        android:layout_toEndOf="@+id/textView" />
+
+
+
+</RelativeLayout>
